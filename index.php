@@ -129,7 +129,7 @@ include 'php/include.php';
                     $fetch = mysqli_query($con, "SELECT * FROM english WHERE archive!='1' ORDER BY news_date DESC");
                 }
 
-                if (mysqli_num_rows($fetch) > 0) {
+                if (mysqli_num_rows() > 0) {
                     while ($row = mysqli_fetch_assoc($fetch)) {
                         $id = $row['id'];
                 ?>
